@@ -1,4 +1,4 @@
-FROM python:2.7.11
+FROM python:2.7
 
 # Install caravel
 RUN pip install caravel
