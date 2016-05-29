@@ -3,6 +3,9 @@ FROM python:2.7
 # Install caravel
 RUN pip install caravel
 
+# Install mysql connector
+RUN pip install https://cdn.mysql.com/Downloads/Connector-Python/mysql-connector-python-2.1.3.tar.gz
+
 # copy admin password details to /caravel for fabmanager
 RUN mkdir /caravel
 COPY admin.config /caravel/
